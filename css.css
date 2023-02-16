@@ -1,0 +1,58 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 6px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-style: inherit;
+  font-weight: 600;
+  }
+  #notify{
+    color: white;
+    font-size: 15px;
+    padding-top: 5px;
+    font-family: initial;
+  }
+  body{
+    background-image: url("public/bg4.png");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+   
+  .action-btn::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    left: 1027px;
+    top: 496px;
+    border: 0.15em solid transparent;
+    border-right-color: white;
+    border-radius: 50%;
+    animation: button-anim 0.7s linear infinite;
+    opacity: 0;
+}
+  
+  @keyframes button-anim {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .action-btn.loading {
+    color: transparent;
+  }
+  
+  .action-btn.loading::after {
+    opacity: 1;
+  }
+  
